@@ -1,0 +1,21 @@
+{
+  "countries": ["India","Srilanka","America"],
+  "cities": [
+    {
+      "country": "India",
+      "city": "Delhi",
+      "poppulation": 100000
+    },
+    {
+      "country": "America",
+      "city": "Washngton DC",
+      "poppulation": 145679
+    },
+    {
+      "country": "China",
+      "city": "Beging",
+      "poppulation": 9864467
+    }
+  ]
+  
+}
