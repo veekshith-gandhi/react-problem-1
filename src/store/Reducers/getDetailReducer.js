@@ -18,18 +18,24 @@ const getDetailsReducer = (state = initalState, action) => {
 
     case ActionType.DELETECOUNTRY:
       let result = state.filter((i) => i.id !== action.payload);
-      console.log(result);
+      // console.log(result);
       return [...result];
+
     case ActionType.EDITDETAILS:
       let data = state.filter((i) => i.id !== action.payload.id);
-
-      console.log([...data, action.payload]);
-
-      // data[0].country = action.payload.country;
-      // data[0].city = action.payload.city;
-      // data[0].population = action.payload.population;
-      // console.log([...state, data[0]]);
+      // console.log([...data, action.payload]);
       return [...data, action.payload];
+
+    case ActionType.ASCENDING:
+      return [...action.payload];
+
+    case ActionType.DESCENDING:
+      return [...action.payload];
+
+    case ActionType.FILTERNAME:
+      console.log(action);
+      return [...action.payload];
+
     default:
       return state;
   }
