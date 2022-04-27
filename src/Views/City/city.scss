@@ -1,0 +1,19 @@
+/** @format */
+
+.cityContainer {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 100px;
+  .cityInputField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input {
+      height: 30px;
+    }
+  }
+  button {
+    margin-top: 10px;
+    height: 30px;
+  }
+}

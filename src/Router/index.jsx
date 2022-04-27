@@ -8,7 +8,7 @@ import CountryView from "../Views/Country";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route caseSensitive path="/" element={<HomePage />} />
       <Route path="/addcountry" element={<CountryView />} />
       <Route path="/addcity" element={<CityView />} />
     </Routes>

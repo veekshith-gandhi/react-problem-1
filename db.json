@@ -1,21 +1,44 @@
 {
-  "countries": ["India","Srilanka","America"],
+  "countries": [
+    {
+      "india": "",
+      "id": 1
+    },
+    {
+      "dlhi": "",
+      "id": 2
+    }
+  ],
   "cities": [
     {
-      "country": "India",
-      "city": "Delhi",
-      "poppulation": 100000
+      "country": "AM",
+      "city": "A<",
+      "population": 2,
+      "id": 1
     },
     {
-      "country": "America",
-      "city": "Washngton DC",
-      "poppulation": 145679
+      "country": "S",
+      "city": "S",
+      "population": 2,
+      "id": 2
     },
     {
-      "country": "China",
-      "city": "Beging",
-      "poppulation": 9864467
+      "country": "JAPI",
+      "city": "JAPI",
+      "population": 123,
+      "id": 3
+    },
+    {
+      "country": "e",
+      "city": "2",
+      "population": 2,
+      "id": 6
+    },
+    {
+      "country": "IND",
+      "city": "IND",
+      "population": 1,
+      "id": 8
     }
   ]
-  
 }

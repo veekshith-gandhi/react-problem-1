@@ -1,8 +1,10 @@
 /** @format */
 
+import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import Layout from "./Components/Layout";
 import Router from "./Router";
+import store from "./store";
 import "./Styles/globalStyle.scss";
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     <div className="root">
       <BrowserRouter>
         <Layout>
-          <Router />
+          <Provider store={store}>
+            <Router />
+          </Provider>
         </Layout>
       </BrowserRouter>
     </div>
