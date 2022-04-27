@@ -7,15 +7,13 @@
     {
       "dlhi": "",
       "id": 2
+    },
+    {
+      "CHINA": "",
+      "id": 3
     }
   ],
   "cities": [
-    {
-      "country": "JAPAN",
-      "city": "YY",
-      "population": 1234322,
-      "id": 9
-    },
     {
       "country": "INDIA",
       "city": "DELHI",
@@ -39,6 +37,12 @@
       "city": "LAN",
       "population": 76,
       "id": 13
+    },
+    {
+      "country": "QWERTY",
+      "city": "QWE",
+      "population": 1234,
+      "id": 14
     }
   ]
 }
