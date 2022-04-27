@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { filterCountry } from "../../store/Actions/filterCountryAction";
 import { getData } from "../../store/Actions/getDetailsAction";
-
+import "./filtercountry.scss";
 const FilterCountry = () => {
   const [name, setName] = useState("");
   const dispatch = useDispatch();
@@ -15,15 +15,17 @@ const FilterCountry = () => {
     }
   };
   return (
-    <div>
+    <div className="country-container">
       <span>FilterCountry</span>
       <input
         placeholder="enter country"
         type="text"
         onChange={(e) => setName(e.target.value)}
       />
-      <button onClick={handlesubmit}>Filter</button>
-      <button onClick={() => getData()(dispatch)}>NoFilter</button>
+      <div>
+        <button onClick={handlesubmit}>Filter</button>
+        <button onClick={() => getData()(dispatch)}>NoFilter</button>
+      </div>
     </div>
   );
 };

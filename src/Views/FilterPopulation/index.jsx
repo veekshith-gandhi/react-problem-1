@@ -6,13 +6,16 @@ import {
   sortingPopulationDesc,
 } from "../../store/Actions/sortingPopulationAction";
 
+import "./filterpopulation.scss";
 const FilterPopulation = () => {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className="pop-Container">
       <span>FilterPopulation</span>
-      <button onClick={() => sortingPopulationAsc()(dispatch)}>Asc</button>
-      <button onClick={() => sortingPopulationDesc()(dispatch)}>Desc</button>
+      <div>
+        <button onClick={() => sortingPopulationAsc()(dispatch)}>Asc</button>
+        <button onClick={() => sortingPopulationDesc()(dispatch)}>Desc</button>
+      </div>
     </div>
   );
 };
